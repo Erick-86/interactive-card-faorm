@@ -13,3 +13,64 @@ body{
     height: 100vh;
 }
 
+/* CARD STYLING */
+.card{
+    position: absolute;
+    top: 20%;
+    left: 5%;
+}
+
+/* FRONT CARD */
+.card .cardFront{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 150px;
+    background-color: red;
+    padding: 20px 25px;
+    border-radius: 10px;
+    color: #ffffff;
+}
+
+/* BUBBLES ON TOP */
+.card .cardFront .bubbles{
+    display: flex;
+    align-items: center;
+}
+
+.card .cardFront .bubbles .bubble1{
+    display: block;
+    background-color: #ffffff;
+    width: 35px;
+    height: 35px;
+    margin-right: 10px;
+    border-radius: 50%;
+}
+
+.card .cardFront .bubbles .bubble2{
+    display: block;
+    border: 1.5px solid #ffffff;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+}
+
+/* CARD DETAILS */
+.classFrontDetails .cardNumber{
+    display: flex;
+    justify-content: center;
+    font-size: 1.5rem;
+    letter-spacing: 1.5px;
+    word-spacing: .8rem;
+}
+
+.classFrontDetails .cardNameAndDate{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.classFrontDetails .cardNameAndDate {
+    text-transform: uppercase;
+    font-size: .9rem;
+}
