@@ -5,31 +5,38 @@ body{
     background-color: #ffffff;
 }
 
+/* Mobile Design First */
 /* BG COLOR GRADIENT */
 .leftBgContainer {
     background-color: red;
     background-image: linear-gradient(hsl(249, 99%, 64%) , hsl(278, 94%, 30%));
-    width: 35%;
-    height: 100vh;
+    width: auto;
+    height: 280px;
 }
 
 /* CARD STYLING */
 .card{
-    position: absolute;
-    top: 20%;
-    left: 5%;
+    width: 90%;
+    margin: auto;
 }
 
 /* FRONT CARD */
 .card .cardFront{
+    position: absolute;
+    top: 152px;
+    z-index: 1;
+    width: 80%;
+    background-color: red;
+    border-radius: 10px;
+    color: #ffffff;
+}
+
+.card .cardFrontContainer{
+    margin: 20px;
+    height: 150px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    height: 150px;
-    background-color: red;
-    padding: 20px 25px;
-    border-radius: 10px;
-    color: #ffffff;
 }
 
 /* BUBBLES ON TOP */
@@ -61,7 +68,6 @@ body{
     justify-content: center;
     font-size: 1.5rem;
     letter-spacing: 1.5px;
-    word-spacing: .8rem;
 }
 
 .classFrontDetails .cardNameAndDate{
@@ -78,12 +84,12 @@ body{
 
 /* CARD BACK*/
 .cardBack{
-    width: 327px;
+    width: 80%;
     height: 190px;
     background-color: black;
     position: absolute;
-    left: 70px;
-    margin-top: 27px;
+    top: 39px;
+    right: 5%;
     border-radius: 10px;
 }
 
