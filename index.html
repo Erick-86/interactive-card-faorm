@@ -37,6 +37,24 @@
                 </div>
            </section>
         </section>
+
+        <section class="formSections">
+            <form>
+                <label for="cardholdername">cardholder name</label>
+                <input type="name" id="cardholdername" placeholder="e.g. Asante Eric">
+
+                <label for="cardnumber">card number</label>
+                <input type="text" id="cardnumber" placeholder="e.g. 1234 5678 0123 0000" maxlength="16">
+
+                <div class="card-date">
+                    <label for="carddate">exp. date (mm/yy)</label>
+                    <input type="text" name="" id="carddate" placeholder="MM" maxlength="2">
+                    <input type="text" name="" id="carddate" placeholder="YY" maxlength="2">
+                </div>
+                <label for="card-pin">cvc</label>
+                <input type="text" id="card-pin" placeholder="e.g. 123" maxlength="3">
+            </form>
+        </section>
     </main>
 </body>
 <script src="script.js"></script>
