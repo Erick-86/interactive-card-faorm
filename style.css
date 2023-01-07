@@ -151,3 +151,14 @@ body{
     flex-direction: column;
     width: 50%;
 }
+
+.card_Details .submit-btn{
+    width: 100%;
+    font-size: 1.5rem;
+    padding: 0.8rem;
+    border-radius: 10px;
+    border: none;
+    text-transform: capitalize;
+    background-color: #220930;
+    color: #ffffff;
+}
