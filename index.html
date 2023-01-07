@@ -39,20 +39,28 @@
         </section>
 
         <section class="formSections">
-            <form>
-                <label for="cardholdername">cardholder name</label>
-                <input type="name" id="cardholdername" placeholder="e.g. Asante Eric">
-
-                <label for="cardnumber">card number</label>
-                <input type="text" id="cardnumber" placeholder="e.g. 1234 5678 0123 0000" maxlength="16">
-
-                <div class="card-date">
-                    <label for="carddate">exp. date (mm/yy)</label>
-                    <input type="text" name="" id="carddate" placeholder="MM" maxlength="2">
-                    <input type="text" name="" id="carddate" placeholder="YY" maxlength="2">
+            <form class="card_Details">
+                <section class="card_Name-and-Number">
+                    <label for="cardholdername">cardholder name</label>
+                    <input type="name" id="cardholdername" placeholder="e.g. Asante Eric">
+                </section>
+                <section class="card_Name-and-Number">
+                    <label for="card-number">card number</label>
+                    <input type="text" id="card-number" placeholder="e.g. 1234 5678 0123 0000" maxlength="16">
+                </section>
+                <div class="card_date-and-pin">
+                    <section class="card-date">
+                        <label for="card-date">exp. date (mm/yy)</label>
+                        <div>
+                            <input type="text" name="" id="card-date" placeholder="MM" maxlength="2">
+                            <input type="text" name="" id="card-date" placeholder="YY" maxlength="2">
+                        </div>
+                    </section>
+                    <section class="card_pin">
+                        <label for="card-pin">cvc</label>
+                        <input type="text" id="card-pin" placeholder="e.g. 123" maxlength="3">
+                    </section>
                 </div>
-                <label for="card-pin">cvc</label>
-                <input type="text" id="card-pin" placeholder="e.g. 123" maxlength="3">
             </form>
         </section>
     </main>
