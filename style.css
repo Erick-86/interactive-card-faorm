@@ -155,6 +155,10 @@ body {
   font-weight: 400;
 }
 
+.card_Details input:focus{
+  outline: none;
+}
+
 .card_Details label {
   font-weight: 500;
   font-size: 1rem;
@@ -173,6 +177,7 @@ body {
 
 .card_date-and-pin .card-date div {
   display: flex;
+  margin-top: 12px;
 }
 
 .card_date-and-pin .card-date div input {
@@ -182,7 +187,7 @@ body {
 
 /*  Showing Error */
 .formSections .inpur-error {
-  border: 1.5px solid #f73a3a;
+  border: 0.18rem solid #ff5151;
 }
 
 .formSections .error-message {
@@ -198,7 +203,11 @@ body {
   width: 50%;
 }
 
-.card_Details .submit-btn {
+.card_pin input{
+  margin-top: 12px;
+}
+
+.formSections .submit-btn {
   width: 100%;
   font-size: 1.4rem;
   padding: 0.8rem;
