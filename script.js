@@ -13,9 +13,13 @@ const errorMessage = document.querySelectorAll(".error-message");
 const formsSection = document.querySelector(".formSections");
 const confirmCardSection = document.querySelector(".confirm-card-section");
 
+//loading animation varaible
+const loadingAnimation = document.querySelector(".loading-animation");
+
 //INPUT FUNCTION
 //A function to replace the text content on the card when a user starts typing in any of the input
 //Each index of the input corresponds to its index of the elements on the card
+
 const displayDetailsOnCard = function (index) {
   // Adding space after every 4 values in the number input
   if (index === 1) {
@@ -94,6 +98,14 @@ submitBtn.addEventListener("click", () => {
     //hide the forms section
     formsSection.style.display = "none";
     //show the confirm card section
-    confirmCardSection.style.display = "block";
+    loadingAnimation.style.display = "block";
+
+    // wait for 3 seconds before showing the confirmCardSection
+    setTimeout(() => {
+      // hide the loading animation
+      loadingAnimation.style.display = "none";
+      // show the confirm-card-section
+      confirmCardSection.style.display = "block";
+    }, 2000);
   }
 });
