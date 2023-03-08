@@ -1,185 +1,195 @@
-@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;700&display=swap');
-body{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    background-color: #ffffff;
-    font-family: 'Space Grotesk', sans-serif;
+@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;700&display=swap");
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #ffffff;
+  font-family: "Space Grotesk", sans-serif;
 }
 
 /* Mobile Design First */
 /* BG COLOR GRADIENT */
 .leftBgContainer {
-    background-color: red;
-    background-image: linear-gradient(hsl(249, 99%, 64%) , hsl(278, 94%, 30%));
-    width: auto;
-    height: 280px;
+  background-image: url('/images/bg-main-mobile.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: auto;
+  height: 280px;
+}
+
+.leftBgContainer.desktop {
+  display: none;
 }
 
 /* CARD STYLING */
-.card{
-    width: 90%;
-    margin: auto;
+.card {
+  width: 90%;
+  margin: auto;
 }
 
 /* FRONT CARD */
-.card .cardFront{
-    position: absolute;
-    top: 152px;
-    z-index: 1;
-    width: 80%;
-    background-color: red;
-    border-radius: 10px;
-    color: #ffffff;
+.card .cardFront {
+  /* background-image: url("/images/bg-card-front.png");
+  background-repeat: no-repeat;
+  background-size: cover; */
+  position: absolute;
+  top: 147px;
+  z-index: 1;
+  width: 306px;
+  height: 190px;
+  color: #ffffff;
 }
 
-.card .cardFrontContainer{
-    margin: 20px;
-    height: 150px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+.card .cardFrontContainer {
+  position: absolute;
+  top: 0;
+  margin: 20px;
+  height: 150px;
+  width: -webkit-fill-available;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.card .cardFront img{
+  width: inherit;
+  height: inherit;
 }
 
 /* BUBBLES ON TOP */
-.card .cardFront .bubbles{
-    display: flex;
-    align-items: center;
+.card .cardFront .bubbles {
+  display: flex;
+  align-items: center;
 }
 
-.card .cardFront .bubbles .bubble1{
-    display: block;
-    background-color: #ffffff;
-    width: 35px;
-    height: 35px;
-    margin-right: 10px;
-    border-radius: 50%;
+.card .cardFront .bubbles .bubble1 {
+  display: block;
+  background-color: #ffffff;
+  width: 35px;
+  height: 35px;
+  margin-right: 10px;
+  border-radius: 50%;
 }
 
-.card .cardFront .bubbles .bubble2{
-    display: block;
-    border: 1.5px solid #ffffff;
-    width: 15px;
-    height: 15px;
-    border-radius: 50%;
+.card .cardFront .bubbles .bubble2 {
+  display: block;
+  border: 1.5px solid #ffffff;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
 }
 
 /* CARD DETAILS */
-.cardFrontDetails{
+.cardFrontDetails {
   position: relative;
 }
 
-.cardFrontDetails .cardNameAndNumber{
-    display: flex;
-    flex-direction: column-reverse;
-    justify-content: space-between;
-    margin-top: 20px;
-    text-transform: uppercase;
-    font-size: .9rem;
+.cardFrontDetails .cardNameAndNumber {
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: space-between;
+  margin-top: 20px;
+  text-transform: uppercase;
+  font-size: 0.9rem;
 }
 
-.cardNameAndNumber .cardName{
+.cardNameAndNumber .cardName {
   position: absolute;
   bottom: 0;
 }
 
-.cardFrontDetails .cardNumber{
-    font-size: 1.3rem;
-    letter-spacing: 1.5px;
+.cardFrontDetails .cardNumber {
+  font-size: 1.3rem;
+  letter-spacing: 1.5px;
+  word-spacing: 2px;
+  text-align: center;
+  margin-bottom: 10px;
 }
 
-.cardDate{
+.cardDate {
   float: right;
 }
 
-
 /* CARD BACK*/
-.cardBack{
-    width: 80%;
-    height: 190px;
-    background-color: black;
-    position: absolute;
-    top: 39px;
-    right: 5%;
-    border-radius: 10px;
+.cardBack {
+  width: 306px;
+  height: 190px;
+  position: absolute;
+  top: 39px;
+  right: 5%;
+  border-radius: 10px;
+  color: #fff;
 }
 
-.cardBack .blackBg{
-    background-color: red;
-    height: 38px;
-    margin-top: 25px;
+.cardBack img{
+  width: inherit;
+  height: inherit;
 }
 
-.cardBack .cardPIN{
-    display: flex;
-    align-items: center;
-    justify-content: right;
-    background-color: green;
-    height: 30px;
-    width: 73%;
-    margin: 18px auto;
-    padding: 0 15px;
-    border-radius: 3px;
+.cardBack .cardBackDetails{
+  position: absolute;
+  top: 83px;
+  right: 45px;
 }
 
 /* CARD DETAILS FORMS STYLING */
-.formSections{
-    width: 90%;
-    margin: auto;
-    margin-top: 120px;
-    text-transform: uppercase;
+.formSections {
+  width: 90%;
+  margin: auto;
+  margin-top: 120px;
+  text-transform: uppercase;
 }
 
-.card_Details input{
-    font-size: 1.35rem;
-    padding: .6rem;
-    margin: 12px 0 27px 0;
-    border-radius: 9px;
-    border: .18rem solid #e0e0e0;
-    font-family: 'Space Grotesk', sans-serif;
-    font-weight: 400;
+.card_Details input {
+  font-size: 1.35rem;
+  padding: 0.6rem;
+  margin: 12px 0 27px 0;
+  border-radius: 9px;
+  border: 0.18rem solid #e0e0e0;
+  font-family: "Space Grotesk", sans-serif;
+  font-weight: 400;
 }
 
-.card_Details label{
-    font-weight: 500;
-    font-size: 1rem;
-    word-spacing: .12rem;
+.card_Details label {
+  font-weight: 500;
+  font-size: 1rem;
+  word-spacing: 0.12rem;
 }
 
-.formSections .card_Details .card_Name-and-Number{
-    display: flex;
-    flex-direction: column;
+.formSections .card_Details .card_Name-and-Number {
+  display: flex;
+  flex-direction: column;
 }
 
-.formSections .card_Details .card_date-and-pin{
-    display: flex;
-    flex-direction: row;
+.formSections .card_Details .card_date-and-pin {
+  display: flex;
+  flex-direction: row;
 }
 
-.card_date-and-pin .card-date div{
-    display: flex;
+.card_date-and-pin .card-date div {
+  display: flex;
 }
 
-.card_date-and-pin .card-date div input{
-    width: 100%;
-    margin-right: 10px;
+.card_date-and-pin .card-date div input {
+  width: 100%;
+  margin-right: 10px;
 }
 
-.card_pin{
-    display: flex;
-    flex-direction: column;
-    width: 50%;
+.card_pin {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
 }
 
-.card_Details .submit-btn{
-    width: 100%;
-    font-size: 1.4rem;
-    padding: 0.8rem;
-    border-radius: 10px;
-    border: none;
-    text-transform: capitalize;
-    background-color: #220930;
-    color: #ffffff;
-    font-family: 'Space Grotesk', sans-serif;
-    font-weight: 400;
+.card_Details .submit-btn {
+  width: 100%;
+  font-size: 1.4rem;
+  padding: 0.8rem;
+  border-radius: 10px;
+  border: none;
+  text-transform: capitalize;
+  background-color: #220930;
+  color: #ffffff;
+  font-family: "Space Grotesk", sans-serif;
+  font-weight: 400;
 }
