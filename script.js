@@ -11,7 +11,17 @@ console.log(cardInputs);
 //A function to replace the text content on the card when a user starts typing in any of the input
 //Each index of the input corresponds to its index of the elements on the card
 const displayDetailsOnCard = function (index) {
+
+  // Adding space after every 4 values in the number input
+  if (index === 1) {
+    const cardNumber = cardInputs[1].value.replaceAll(" ", ""); //Remove any existing spaces
+     
+    //Add space after every 4 values
+    const formatCardNumber = cardNumber.replace(/(.{4})/g, "$1 ");
+    cardDetails[index].textContent = formatCardNumber
+  } else {
     cardDetails[index].textContent = cardInputs[index].value;
+  }
 };
 
 //Looping through the input fields to get each index
