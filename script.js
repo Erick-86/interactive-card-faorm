@@ -18,5 +18,11 @@ const displayDetailsOnCard = function (index) {
 for (let i = 0; i < cardInputs.length; i++){
   cardInputs[i].addEventListener('input', () => {
     displayDetailsOnCard(i)
+
+    //Changing the text content on the card to its initial values when the values in an input is cleared
+    if (cardInputs[i].value === "") {
+      cardDetails[i].textContent = cardDetails[i].dataset.initialValue
+    }
   })
+  cardDetails[i].dataset.initialValue = cardDetails[i].textContent
 }
