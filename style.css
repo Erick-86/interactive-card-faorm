@@ -65,22 +65,31 @@ body{
 }
 
 /* CARD DETAILS */
-.classFrontDetails .cardNumber{
+.cardFrontDetails{
+  position: relative;
+}
+
+.cardFrontDetails .cardNameAndNumber{
     display: flex;
-    justify-content: center;
+    flex-direction: column-reverse;
+    justify-content: space-between;
+    margin-top: 20px;
+    text-transform: uppercase;
+    font-size: .9rem;
+}
+
+.cardNameAndNumber .cardName{
+  position: absolute;
+  bottom: 0;
+}
+
+.cardFrontDetails .cardNumber{
     font-size: 1.3rem;
     letter-spacing: 1.5px;
 }
 
-.classFrontDetails .cardNameAndDate{
-    display: flex;
-    justify-content: space-between;
-    margin-top: 20px;
-}
-
-.classFrontDetails .cardNameAndDate {
-    text-transform: uppercase;
-    font-size: .9rem;
+.cardDate{
+  float: right;
 }
 
 
