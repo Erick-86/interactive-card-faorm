@@ -10,6 +10,9 @@ console.log(cardInputs);
 const submitBtn = document.querySelector(".submit-btn");
 const errorMessage = document.querySelectorAll(".error-message");
 
+const formsSection = document.querySelector(".formSections");
+const confirmCardSection = document.querySelector(".confirm-card-section");
+
 //INPUT FUNCTION
 //A function to replace the text content on the card when a user starts typing in any of the input
 //Each index of the input corresponds to its index of the elements on the card
@@ -56,15 +59,19 @@ for (let i = 0; i < cardInputs.length; i++) {
 }
 
 //Checking Errors (Empty Input and strings in the number input) when the submit btn is clicked
-console.log(errorMessage);
 
 submitBtn.addEventListener("click", () => {
+  let allInputsFilled = true;
+
   for (let i = 0; i < cardInputs.length; i++) {
     if (!cardInputs[i].value) {
       cardInputs[i].classList.add("inpur-error");
 
       // display the corresponding error message
       errorMessage[i].style.display = "block";
+
+      //Setting the allInputsFilled to false if there is an error
+      allInputsFilled = false;
     } else {
       cardInputs[i].classList.remove("inpur-error");
 
@@ -77,6 +84,16 @@ submitBtn.addEventListener("click", () => {
       errorMessage[i].textContent = "Wrong format, numbers only";
       errorMessage[i].style.display = "block";
       cardInputs[i].classList.add("inpur-error");
+
+      //Setting the allInputsFilled to false if there is an error
+      allInputsFilled = false;
     }
+  }
+
+  if (allInputsFilled) {
+    //hide the forms section
+    formsSection.style.display = "none";
+    //show the confirm card section
+    confirmCardSection.style.display = "block";
   }
 });
