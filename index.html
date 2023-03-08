@@ -27,14 +27,33 @@
             </div>
             <div class="cardFrontDetails">
               <div class="cardNameAndNumber" id="card-name-and-number">
-                <span class="card-details cardName" id="cardname" data-initial-value="Jane Applessed">Jane Applessed</span>
-                <span class="card-details cardNumber" id="cardnumber" data-initial-value="0000 0000 0000 0000"
+                <span
+                  class="card-details cardName"
+                  id="cardname"
+                  data-initial-value="Jane Applessed"
+                  >Jane Applessed</span
+                >
+                <span
+                  class="card-details cardNumber"
+                  id="cardnumber"
+                  data-initial-value="0000 0000 0000 0000"
                   >0000 0000 0000 0000</span
                 >
               </div>
               <span class="cardDate" id="carddate">
-                <span class="card-details month" id="month" data-initial-value="00">00</span> /
-                <span class="card-details year" id="year" data-initial-value="00">00</span>
+                <span
+                  class="card-details month"
+                  id="month"
+                  data-initial-value="00"
+                  >00</span
+                >
+                /
+                <span
+                  class="card-details year"
+                  id="year"
+                  data-initial-value="00"
+                  >00</span
+                >
               </span>
             </div>
           </div>
@@ -42,7 +61,12 @@
         <section class="cardBack">
           <img src="/images/bg-card-back.png" alt="" />
           <div class="cardBackDetails">
-            <span class="card-details cardPIN" id="cardPIN" data-initial-value="000">000</span>
+            <span
+              class="card-details cardPIN"
+              id="cardPIN"
+              data-initial-value="000"
+              >000</span
+            >
           </div>
         </section>
       </section>
@@ -51,22 +75,28 @@
         <form class="card_Details">
           <section class="card_Name-and-Number">
             <label for="cardholdername">cardholder name</label>
-            <input
-              type="name"
-              id="cardholdername"
-              placeholder="e.g. Asante Eric"
-              data-index="0"
-            />
+            <div class="input-container">
+              <input
+                type="name"
+                id="cardholdername"
+                placeholder="e.g. Asante Eric"
+                data-index="0"
+              />
+              <span class="error-message">Can't be blank</span>
+            </div>
           </section>
           <section class="card_Name-and-Number">
             <label for="card-number">card number</label>
-            <input
-              type="text"
-              id="card-number"
-              placeholder="e.g. 1234 5678 0123 0000"
-              maxlength="16"
-              data-index="1"
-            />
+            <div class="input-container">
+              <input
+                type="text"
+                id="card-number"
+                placeholder="e.g. 1234 5678 0123 0000"
+                maxlength="16"
+                data-index="1"
+              />
+              <span class="error-message">Can't be blank</span>
+            </div>
           </section>
           <div class="card_date-and-pin">
             <section class="card-date">
@@ -89,6 +119,7 @@
                   data-index="3"
                 />
               </div>
+              <span class="error-message">Can't be blank</span>
             </section>
             <section class="card_pin">
               <label for="card-pin">cvc</label>
@@ -99,6 +130,7 @@
                 maxlength="3"
                 data-index="4"
               />
+              <span class="error-message">Can't be blank</span>
             </section>
           </div>
           <button type="submit" class="submit-btn">confirm</button>
