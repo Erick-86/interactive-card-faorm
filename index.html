@@ -1,72 +1,105 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-    <link rel="stylesheet" href="style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="style.css" />
     <title>Frontend Mentor | Interactive card details form</title>
-</head>
-<body>
+  </head>
+  <body>
     <div class="leftBgContainer mobile"></div>
     <div class="leftBgContainer desktop"></div>
     <main>
-        <section class="card">
-           <section class="cardFront">
-            <img src="/images/bg-card-front.png" alt="">
-                <div class="cardFrontContainer">
-                    <div class="bubbles">
-                        <span class="bubble1"></span>
-                        <span class="bubble2"></span>
-                    </div>
-                    <div class="cardFrontDetails">
-                      <div class="cardNameAndNumber" id="card-name-and-number">
-                        <span class="cardName" id="cardname">Jane Applessed</span>
-                        <span class="cardNumber" id="cardnumber">0000 0000 0000 0000</span>
-                      </div>
-                      <span class="cardDate" id="carddate">
-                          <span class="month" id="month">00</span> /
-                          <span class="year" id="year">00</span>
-                      </span>
-                    </div>
-                </div>
-           </section>
-           <section class="cardBack">
-            <img src="/images/bg-card-back.png" alt="">
-                <div class="cardBackDetails">
-                    <span class="cardPIN" id="cardPIN">000</span>
-                </div>
-           </section>
+      <section class="card">
+        <section class="cardFront">
+          <img src="/images/bg-card-front.png" alt="" />
+          <div class="cardFrontContainer">
+            <div class="bubbles">
+              <span class="bubble1"></span>
+              <span class="bubble2"></span>
+            </div>
+            <div class="cardFrontDetails">
+              <div class="cardNameAndNumber" id="card-name-and-number">
+                <span class="card-details cardName" id="cardname">Jane Applessed</span>
+                <span class="card-details cardNumber" id="cardnumber"
+                  >0000 0000 0000 0000</span
+                >
+              </div>
+              <span class="cardDate" id="carddate">
+                <span class="card-details month" id="month">00</span> /
+                <span class="card-details year" id="year">00</span>
+              </span>
+            </div>
+          </div>
         </section>
+        <section class="cardBack">
+          <img src="/images/bg-card-back.png" alt="" />
+          <div class="cardBackDetails">
+            <span class="card-details cardPIN" id="cardPIN">000</span>
+          </div>
+        </section>
+      </section>
 
-        <section class="formSections">
-            <form class="card_Details">
-                <section class="card_Name-and-Number">
-                    <label for="cardholdername">cardholder name</label>
-                    <input type="name" id="cardholdername" placeholder="e.g. Asante Eric">
-                </section>
-                <section class="card_Name-and-Number">
-                    <label for="card-number">card number</label>
-                    <input type="text" id="card-number" placeholder="e.g. 1234 5678 0123 0000" maxlength="16">
-                </section>
-                <div class="card_date-and-pin">
-                    <section class="card-date">
-                        <label for="card-date">exp. date (mm/yy)</label>
-                        <div>
-                            <input type="text" name="" id="card-date" placeholder="MM" maxlength="2">
-                            <input type="text" name="" id="card-date" placeholder="YY" maxlength="2">
-                        </div>
-                    </section>
-                    <section class="card_pin">
-                        <label for="card-pin">cvc</label>
-                        <input type="text" id="card-pin" placeholder="e.g. 123" maxlength="3">
-                    </section>
-                </div>
-                <button type="submit" class="submit-btn">confirm</button>
-            </form>
-        </section>
+      <section class="formSections">
+        <form class="card_Details">
+          <section class="card_Name-and-Number">
+            <label for="cardholdername">cardholder name</label>
+            <input
+              type="name"
+              id="cardholdername"
+              placeholder="e.g. Asante Eric"
+            />
+          </section>
+          <section class="card_Name-and-Number">
+            <label for="card-number">card number</label>
+            <input
+              type="text"
+              id="card-number"
+              placeholder="e.g. 1234 5678 0123 0000"
+              maxlength="16"
+            />
+          </section>
+          <div class="card_date-and-pin">
+            <section class="card-date">
+              <label for="card-date">exp. date (mm/yy)</label>
+              <div>
+                <input
+                  type="text"
+                  name=""
+                  id="card-date"
+                  placeholder="MM"
+                  maxlength="2"
+                />
+                <input
+                  type="text"
+                  name=""
+                  id="card-date"
+                  placeholder="YY"
+                  maxlength="2"
+                />
+              </div>
+            </section>
+            <section class="card_pin">
+              <label for="card-pin">cvc</label>
+              <input
+                type="text"
+                id="card-pin"
+                placeholder="e.g. 123"
+                maxlength="3"
+              />
+            </section>
+          </div>
+          <button type="submit" class="submit-btn">confirm</button>
+        </form>
+      </section>
     </main>
-</body>
-<script src="script.js"></script>
+  </body>
+  <script src="script.js"></script>
 </html>
