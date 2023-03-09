@@ -261,14 +261,14 @@ main button {
 
 /* Adding of loading animation */
 .loading {
-      /* display: flex; */
-    /* align-items: center; */
-    top: 200px;
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    /* margin-top: 220px; */
-    transform: translate(-50%, -50%);
+  /* display: flex; */
+  /* align-items: center; */
+  top: 200px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  /* margin-top: 220px; */
+  transform: translate(-50%, -50%);
 }
 
 .loading-animation {
@@ -342,5 +342,186 @@ main button {
   100% {
     box-shadow: 30px 0 0 #97bf0d;
     margin-top: 0;
+  }
+}
+
+/* Making it fit into larger screen */
+@media screen and (min-width: 1000px) {
+  body {
+    display: flex;
+  }
+
+  .leftBgContainer.mobile {
+    display: none;
+  }
+
+  .leftBgContainer.desktop {
+    display: block;
+    width: 30%;
+    height: 100vh;
+  }
+
+  main {
+    width: 70%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  main .main-container {
+    position: relative;
+    height: 500px;
+    width: 100%;
+  }
+
+  .card {
+    width: auto;
+    position: absolute;
+    left: -225px;
+  }
+
+  .formSections {
+    width: 40%;
+    margin-top: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: inherit;
+  }
+
+  .card .cardFront {
+    left: -13px;
+    top: 15px;
+    width: 350px;
+    height: 220px;
+  }
+
+  .cardBack {
+    left: 44px;
+    right: 0px;
+    top: 272px;
+    width: 350px;
+    height: 220px;
+  }
+
+  .card .cardFrontContainer {
+    margin: 20px 15px;
+    height: -webkit-fill-available;
+    width: -webkit-fill-available;
+  }
+
+  .formSections .input-container {
+    height: 58px;
+    margin: 1px 0 10px 0;
+  }
+
+  .card_Details input {
+    font-size: 1.2rem;
+    padding: 0.6rem;
+    border-radius: 9px;
+    height: 15px;
+  }
+
+  .cardBack .cardBackDetails {
+    left: 17rem;
+    top: 98px;
+  }
+
+  .cardFrontDetails .cardNumber {
+    font-size: 1.3rem;
+    word-spacing: 20px;
+    margin-bottom: 10px;
+  }
+
+  .confirm-card-section {
+    width: 350px;
+  }
+
+  .formSections .card_Details .card_date-and-pin {
+    height: 120px;
+  }
+
+  main button {
+    margin: 1px 0px 0px 0px;
+    padding: 0.7rem;
+  }
+
+  .confirm-card-section button{
+    margin-top: 20px;
+  }
+}
+
+@media screen and (min-width: 1460px) {
+  .formSections {
+    width: 450px;
+    margin-top: 0;
+  }
+
+  .card .cardFront {
+    width: 500px;
+    height: auto !important;
+    left: -150px;
+    top: -40px;
+  }
+
+  .card .cardFrontContainer {
+    margin: 25px;
+  }
+
+  .cardFrontDetails .cardNumber {
+    font-size: 2rem;
+    word-spacing: 20px;
+    margin-bottom: 20px;
+  }
+
+  .cardFrontDetails .cardNameAndNumber {
+    font-size: 1.1rem;
+  }
+
+  .cardDate {
+    font-size: 1.1rem;
+  }
+
+  .cardBack {
+    width: 500px;
+    height: auto !important;
+    left: -32px;
+    top: 280px;
+  }
+
+  .cardBack .cardBackDetails {
+    top: 117px;
+    left: 23.5rem;
+    font-size: 1.5rem;
+  }
+
+  .formSections .input-container {
+    height: 65px;
+    margin: 12px 0 15px 0;
+  }
+
+  .leftBgContainer.desktop {
+    display: block;
+    width: 35%;
+  }
+
+  .confirm-card-section {
+    width: 400px;
+  }
+
+  main button {
+    margin: 25px 0px 0px 0px;
+  }
+}
+
+@media screen and (min-width: 2000px) {
+  main {
+    width: 1200px;
+  }
+
+  .leftBgContainer.desktop {
+    width: 40%;
   }
 }

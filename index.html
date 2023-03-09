@@ -17,161 +17,167 @@
     <div class="leftBgContainer mobile"></div>
     <div class="leftBgContainer desktop"></div>
     <main>
-      <section class="card">
-        <section class="cardFront">
-          <img src="/images/bg-card-front.png" alt="" />
-          <div class="cardFrontContainer">
-            <div class="bubbles">
-              <span class="bubble1"></span>
-              <span class="bubble2"></span>
-            </div>
-            <div class="cardFrontDetails">
-              <div class="cardNameAndNumber" id="card-name-and-number">
-                <span
-                  class="card-details cardName"
-                  id="cardname"
-                  data-initial-value="Jane Applessed"
-                  >Jane Applessed</span
-                >
-                <span
-                  class="card-details cardNumber"
-                  id="cardnumber"
-                  data-initial-value="0000 0000 0000 0000"
-                  >0000 0000 0000 0000</span
-                >
+      <div class="main-container">
+        <section class="card">
+          <section class="cardFront">
+            <img src="/images/bg-card-front.png" alt="" />
+            <div class="cardFrontContainer">
+              <div class="bubbles">
+                <span class="bubble1"></span>
+                <span class="bubble2"></span>
               </div>
-              <span class="cardDate" id="carddate">
-                <span
-                  class="card-details month"
-                  id="month"
-                  data-initial-value="00"
-                  >00</span
-                >
-                /
-                <span
-                  class="card-details year"
-                  id="year"
-                  data-initial-value="00"
-                  >00</span
-                >
-              </span>
-            </div>
-          </div>
-        </section>
-        <section class="cardBack">
-          <img src="/images/bg-card-back.png" alt="" />
-          <div class="cardBackDetails">
-            <span
-              class="card-details cardPIN"
-              id="cardPIN"
-              data-initial-value="000"
-              >000</span
-            >
-          </div>
-        </section>
-      </section>
-
-      <section class="formSections">
-        <form class="card_Details">
-          <section class="card_Name-and-Number">
-            <label for="cardholdername">cardholder name</label>
-            <div class="input-container">
-              <input
-                type="name"
-                id="cardholdername"
-                placeholder="e.g. Asante Eric"
-                data-index="0"
-              />
-              <span class="error-message">Can't be blank</span>
+              <div class="cardFrontDetails">
+                <div class="cardNameAndNumber" id="card-name-and-number">
+                  <span
+                    class="card-details cardName"
+                    id="cardname"
+                    data-initial-value="Jane Applessed"
+                    >Jane Applessed</span
+                  >
+                  <span
+                    class="card-details cardNumber"
+                    id="cardnumber"
+                    data-initial-value="0000 0000 0000 0000"
+                    >0000 0000 0000 0000</span
+                  >
+                </div>
+                <span class="cardDate" id="carddate">
+                  <span
+                    class="card-details month"
+                    id="month"
+                    data-initial-value="00"
+                    >00</span
+                  >
+                  /
+                  <span
+                    class="card-details year"
+                    id="year"
+                    data-initial-value="00"
+                    >00</span
+                  >
+                </span>
+              </div>
             </div>
           </section>
-          <section class="card_Name-and-Number">
-            <label for="card-number">card number</label>
-            <div class="input-container">
-              <input
-                type="text"
-                id="card-number"
-                placeholder="e.g. 1234 5678 0123 0000"
-                maxlength="16"
-                data-index="1"
-              />
-              <span class="error-message">Can't be blank</span>
-            </div>
-          </section>
-          <div class="card_date-and-pin">
-            <section class="card-date">
-              <label for="card-date">exp. date (mm/yy)</label>
-              <div>
-                <input
-                  type="text"
-                  name=""
-                  id="card-date"
-                  placeholder="MM"
-                  maxlength="2"
-                  data-index="2"
-                />
-                <input
-                  type="text"
-                  name=""
-                  id="card-date"
-                  placeholder="YY"
-                  maxlength="2"
-                  data-index="3"
-                />
-              </div>
-              <span class="error-message">Can't be blank</span>
-              <span class="error-message">Can't be blank</span>
-            </section>
-            <section class="card_pin">
-              <label for="card-pin">cvc</label>
-              <input
-                type="text"
-                id="card-pin"
-                placeholder="e.g. 123"
-                maxlength="3"
-                data-index="4"
-              />
-              <span class="error-message">Can't be blank</span>
-            </section>
-          </div>
-        </form>
-        <button class="submit-btn">confirm</button>
-      </section>
-      <div class="loading">
-        <div class="loading-animation"></div>
-      </div>
-      <section class="confirm-card-section">
-        <div>
-          <svg
-            width="80"
-            height="80"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <circle cx="40" cy="40" r="40" fill="url(#a)" />
-            <path d="M28 39.92 36.08 48l16-16" stroke="#fff" stroke-width="3" />
-            <defs>
-              <linearGradient
-                id="a"
-                x1="-23.014"
-                y1="11.507"
-                x2="0"
-                y2="91.507"
-                gradientUnits="userSpaceOnUse"
+          <section class="cardBack">
+            <img src="/images/bg-card-back.png" alt="" />
+            <div class="cardBackDetails">
+              <span
+                class="card-details cardPIN"
+                id="cardPIN"
+                data-initial-value="000"
+                >000</span
               >
-                <stop stop-color="#6348FE" />
-                <stop offset="1" stop-color="#610595" />
-              </linearGradient>
-            </defs>
-          </svg>
+            </div>
+          </section>
+        </section>
 
-          <h3>Thank You</h3>
-
-          <p>We've added your card details</p>
-
-          <button>Continue</button>
+        <section class="formSections">
+          <form class="card_Details">
+            <section class="card_Name-and-Number">
+              <label for="cardholdername">cardholder name</label>
+              <div class="input-container">
+                <input
+                  type="name"
+                  id="cardholdername"
+                  placeholder="e.g. Asante Eric"
+                  data-index="0"
+                />
+                <span class="error-message">Can't be blank</span>
+              </div>
+            </section>
+            <section class="card_Name-and-Number">
+              <label for="card-number">card number</label>
+              <div class="input-container">
+                <input
+                  type="text"
+                  id="card-number"
+                  placeholder="e.g. 1234 5678 0123 0000"
+                  maxlength="16"
+                  data-index="1"
+                />
+                <span class="error-message">Can't be blank</span>
+              </div>
+            </section>
+            <div class="card_date-and-pin">
+              <section class="card-date">
+                <label for="card-date">exp. date (mm/yy)</label>
+                <div>
+                  <input
+                    type="text"
+                    name=""
+                    id="card-date"
+                    placeholder="MM"
+                    maxlength="2"
+                    data-index="2"
+                  />
+                  <input
+                    type="text"
+                    name=""
+                    id="card-date"
+                    placeholder="YY"
+                    maxlength="2"
+                    data-index="3"
+                  />
+                </div>
+                <span class="error-message">Can't be blank</span>
+                <span class="error-message">Can't be blank</span>
+              </section>
+              <section class="card_pin">
+                <label for="card-pin">cvc</label>
+                <input
+                  type="text"
+                  id="card-pin"
+                  placeholder="e.g. 123"
+                  maxlength="3"
+                  data-index="4"
+                />
+                <span class="error-message">Can't be blank</span>
+              </section>
+            </div>
+          </form>
+          <button class="submit-btn">confirm</button>
+        </section>
+        <div class="loading">
+          <div class="loading-animation"></div>
         </div>
-      </section>
+        <section class="confirm-card-section">
+          <div>
+            <svg
+              width="80"
+              height="80"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <circle cx="40" cy="40" r="40" fill="url(#a)" />
+              <path
+                d="M28 39.92 36.08 48l16-16"
+                stroke="#fff"
+                stroke-width="3"
+              />
+              <defs>
+                <linearGradient
+                  id="a"
+                  x1="-23.014"
+                  y1="11.507"
+                  x2="0"
+                  y2="91.507"
+                  gradientUnits="userSpaceOnUse"
+                >
+                  <stop stop-color="#6348FE" />
+                  <stop offset="1" stop-color="#610595" />
+                </linearGradient>
+              </defs>
+            </svg>
+
+            <h3>Thank You</h3>
+
+            <p>We've added your card details</p>
+
+            <button>Continue</button>
+          </div>
+        </section>
+      </div>
     </main>
   </body>
   <script src="script.js"></script>
