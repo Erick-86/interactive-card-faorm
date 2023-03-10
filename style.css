@@ -257,6 +257,7 @@ main button {
   font-weight: 500;
   color: #838383;
   margin: 0;
+  text-align: center;
 }
 
 /* Adding of loading animation */
@@ -346,6 +347,80 @@ main button {
 }
 
 /* Making it fit into larger screen */
+@media only screen and (max-width: 320px) {
+  .cardFront,
+  .cardBack {
+    transform: scale(0.7) !important;
+  }
+
+  .cardFront {
+    left: -22px !important;
+  }
+
+  .cardBack {
+    left: 0;
+    top: 0px;
+  }
+}
+
+@media only screen and (max-width: 323px) {
+  .cardFront,
+  .cardBack {
+    transform: scale(0.7);
+  }
+}
+
+@media only screen and (max-width: 360px) {
+  .leftBgContainer {
+    height: 18vh;
+  }
+
+  .cardFront,
+  .cardBack {
+    transform: scale(0.8);
+  }
+
+  .cardFront {
+    left: 0;
+    top: 86px !important;
+  }
+
+  .cardBack {
+    right: 0;
+    top: 0px;
+  }
+}
+
+@media screen and (min-width: 420px) {
+  main {
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .main-container {
+    width: 400px;
+    /* margin: auto; */
+    /* height: 100vh; */
+    position: absolute;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .formSections {
+    margin: auto;
+    width: auto;
+    position: absolute;
+    top: 362px;
+  }
+
+  .confirm-card-section {
+    top: 41rem;
+  }
+}
+
 @media screen and (min-width: 1000px) {
   body {
     display: flex;
@@ -389,6 +464,7 @@ main button {
     align-items: center;
     justify-content: center;
     height: inherit;
+    position: initial;
   }
 
   .card .cardFront {
@@ -437,6 +513,7 @@ main button {
 
   .confirm-card-section {
     width: 350px;
+    top: 80px;
   }
 
   .formSections .card_Details .card_date-and-pin {
@@ -448,7 +525,7 @@ main button {
     padding: 0.7rem;
   }
 
-  .confirm-card-section button{
+  .confirm-card-section button {
     margin-top: 20px;
   }
 }
