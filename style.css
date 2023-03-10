@@ -264,12 +264,11 @@ main button {
 .loading {
   /* display: flex; */
   /* align-items: center; */
-  /* top: 200px; */
   position: absolute;
   left: 50%;
-  /* top: 50%; */
+  top: 50%;
   /* margin-top: 220px; */
-  transform: translate(-50%, 30rem);
+  transform: translate(-50%, -50%);
 }
 
 .loading-animation {
@@ -419,6 +418,17 @@ main button {
   .confirm-card-section {
     top: 41rem;
   }
+
+  .loading {
+  /* display: flex; */
+  /* align-items: center; */
+  /* top: 200px; */
+  position: absolute;
+  left: 50%;
+  /* top: 50%; */
+  /* margin-top: 220px; */
+  transform: translate(-50%, 30rem);
+}
 }
 
 @media screen and (min-width: 1000px) {
@@ -524,6 +534,10 @@ main button {
     margin: 1px 0px 0px 0px;
     padding: 0.7rem;
   }
+
+  .loading {
+    transform: translate(-50%, -50%);
+}
 
   .confirm-card-section button {
     margin-top: 20px;
